@@ -9,7 +9,7 @@ const HeartElement = ({wishQuantity}: {wishQuantity: number}) => {
     <div className="relative">
       <Link href="/wishlist">
         <FaHeart className="text-2xl text-black" />
-        <span className="w-6 h-6 font-bold bg-[#9cc0d0] text-white rounded-full flex justify-center items-center absolute top-[-17px] right-[-22px]">
+        <span className="w-6 h-6 font-bold bg-[#5068a4] text-white rounded-full flex justify-center items-center absolute top-[-17px] right-[-22px]">
           { wishQuantity }
         </span>
       </Link>

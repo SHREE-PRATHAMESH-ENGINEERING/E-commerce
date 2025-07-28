@@ -24,11 +24,16 @@ const CartPage = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="pcb-hero-bg pcb-pattern min-h-screen relative overflow-hidden">
+      {/* Background Circuit Elements */}
+      <div className="absolute top-20 right-20 w-32 h-1 circuit-flow opacity-15"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-1 circuit-flow opacity-20" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#5068a4] rounded-full opacity-20 float-element"></div>
+      
       <SectionTitle title="Cart Page" path="Home | Cart" />
-      <div className="bg-white">
+      <div className="bg-transparent relative z-10">
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-[#5068a4] sm:text-4xl text-glow">
             Shopping Cart
           </h1>
           <form className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
@@ -116,11 +121,15 @@ const CartPage = () => {
             {/* Order summary */}
             <section
               aria-labelledby="summary-heading"
-              className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8"
+              className="mt-16 rounded-2xl bg-white/80 backdrop-blur-sm border border-[#5068a4] px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8 shadow-lg relative overflow-hidden"
             >
+              {/* Circuit elements */}
+              <div className="absolute top-4 right-4 w-12 h-0.5 bg-[#5068a4] opacity-20"></div>
+              <div className="absolute bottom-4 left-4 w-8 h-0.5 bg-[#5068a4] opacity-15"></div>
+              
               <h2
                 id="summary-heading"
-                className="text-lg font-medium text-gray-900"
+                className="text-lg font-bold text-[#5068a4] text-glow relative z-10"
               >
                 Order summary
               </h2>
@@ -183,9 +192,17 @@ const CartPage = () => {
                 <div className="mt-6">
                   <Link
                     href="/checkout"
-                    className="block flex justify-center items-center w-full uppercase bg-white px-4 py-3 text-base border border-black border-gray-300 font-bold text-blue-600 shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
+                    className="flex justify-center items-center w-full uppercase bg-[#5068a4] px-4 py-3 text-base border-2 border-[#5068a4] font-bold text-white shadow-lg hover:bg-white hover:text-[#5068a4] focus:outline-none focus:ring-2 focus:ring-[#5068a4] transition-all duration-300 group relative overflow-hidden"
                   >
-                    <span>Checkout</span>
+                    <span className="relative z-10 flex items-center gap-2">
+                      <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                      Checkout
+                    </span>
+                    {/* Circuit effects */}
+                    <div className="absolute top-1/2 left-4 w-8 h-0.5 bg-white opacity-0 group-hover:opacity-40 transition-opacity duration-300 transform -translate-y-1/2"></div>
+                    <div className="absolute top-1/2 right-4 w-6 h-0.5 bg-white opacity-0 group-hover:opacity-30 transition-opacity duration-300 transform -translate-y-1/2"></div>
                   </Link>
                 </div>
               )}

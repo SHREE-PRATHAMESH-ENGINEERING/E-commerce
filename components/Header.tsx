@@ -69,65 +69,65 @@ const Header = () => {
       
       <HeaderTop />
       {pathname.startsWith("/admin") === false && (
-        <div className="h-32 bg-transparent flex items-center justify-between px-16 max-[1320px]:px-16 max-md:px-6 max-lg:flex-col max-lg:gap-y-7 max-lg:justify-center max-lg:h-60 max-w-screen-2xl mx-auto relative z-10">
-          <Link href="/" className="group relative">
+        <div className="h-32 bg-transparent flex items-center justify-between px-16 max-[1320px]:px-12 max-lg:px-6 max-md:px-4 max-sm:px-2 max-lg:flex-col max-lg:gap-y-4 max-lg:justify-center max-lg:h-auto max-lg:py-4 max-w-screen-2xl mx-auto relative z-10">
+          <Link href="/" className="group relative max-lg:order-1">
             <img 
               src="/logo v1 svg.svg" 
               width={200} 
               height={200} 
               alt="Shree Prathmesh Engineering - PCB Manufacturing" 
-              className="relative right-5 max-[1023px]:w-56 transition-all duration-300 group-hover:scale-105 filter drop-shadow-lg group-hover:drop-shadow-xl" 
+              className="relative right-5 max-[1023px]:w-56 max-md:w-48 max-sm:w-40 max-sm:right-2 transition-all duration-300 group-hover:scale-105 filter drop-shadow-lg group-hover:drop-shadow-xl" 
             />
             {/* Glowing effect around logo */}
             <div className="absolute inset-0 -m-2 border border-[#5068a4] rounded-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
           </Link>
           
-          <div className="relative">
+          <div className="relative max-lg:order-3 max-lg:w-full max-md:max-w-md max-md:mx-auto">
             <SearchInput />
           </div>
           
-          <div className="flex gap-x-10 items-center">
+          <div className="flex gap-x-10 items-center max-lg:order-2 max-md:gap-x-6 max-sm:gap-x-4">
             <div className="relative group">
               <HeartElement wishQuantity={wishQuantity} />
               {/* Circuit indicator */}
-              <div className="absolute -bottom-1 left-1/2 w-6 h-0.5 bg-[#5068a4] transform -translate-x-1/2 opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+              <div className="absolute -bottom-1 left-1/2 w-6 h-0.5 bg-[#5068a4] transform -translate-x-1/2 opacity-0 group-hover:opacity-60 transition-opacity duration-300 max-sm:w-4"></div>
             </div>
             <div className="relative group">
               <CartElement />
               {/* Circuit indicator */}
-              <div className="absolute -bottom-1 left-1/2 w-6 h-0.5 bg-[#5068a4] transform -translate-x-1/2 opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+              <div className="absolute -bottom-1 left-1/2 w-6 h-0.5 bg-[#5068a4] transform -translate-x-1/2 opacity-0 group-hover:opacity-60 transition-opacity duration-300 max-sm:w-4"></div>
             </div>
           </div>
         </div>
       )}
       {pathname.startsWith("/admin") === true && (
-        <div className="flex justify-between h-32 bg-transparent items-center px-16 max-[1320px]:px-10  max-w-screen-2xl mx-auto max-[400px]:px-5 relative z-10">
+        <div className="flex justify-between h-32 bg-transparent items-center px-16 max-[1320px]:px-10 max-lg:px-6 max-md:px-4 max-sm:px-2 max-w-screen-2xl mx-auto max-sm:h-24 relative z-10">
           <Link href="/" className="group relative">
             <Image
               src="/logo v1 svg.svg"
               width={130}
               height={130}
               alt="Shree Prathmesh Engineering - PCB Manufacturing"
-              className="w-56 h-auto transition-all duration-300 group-hover:scale-105 filter drop-shadow-lg"
+              className="w-56 h-auto max-lg:w-48 max-md:w-40 max-sm:w-32 transition-all duration-300 group-hover:scale-105 filter drop-shadow-lg"
             />
             {/* Glowing effect around logo */}
             <div className="absolute inset-0 -m-2 border border-[#5068a4] rounded-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
           </Link>
-          <div className="flex gap-x-5 items-center">
-            <FaBell className="text-xl" />
+          <div className="flex gap-x-5 items-center max-sm:gap-x-3">
+            <FaBell className="text-xl max-sm:text-lg hover:text-[#5068a4] transition-colors duration-300 cursor-pointer" />
             <div className="dropdown dropdown-end">
-              <div tabIndex={0} role="button" className="w-10">
+              <div tabIndex={0} role="button" className="w-10 max-sm:w-8">
                 <Image
                   src="/randomuser.jpg"
                   alt="random profile photo"
                   width={30}
                   height={30}
-                  className="w-full h-full rounded-full"
+                  className="w-full h-full rounded-full hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <ul
                 tabIndex={0}
-                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 max-sm:w-40 max-sm:right-0"
               >
                 <li>
                   <Link href="/admin">Dashboard</Link>
