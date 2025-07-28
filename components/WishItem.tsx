@@ -98,7 +98,7 @@ const WishItem = ({
         )}
       </td>
       <td>
-        <button className="btn btn-xs bg-[#f5772b] text-white hover:text-[#f5772b] border border-[#f5772b] hover:bg-white text-sm">
+        <button className="btn btn-xs bg-[#9cc0d0] text-white hover:text-[#9cc0d0] border border-[#9cc0d0] hover:bg-white text-sm">
           <FaHeartCrack />
           <span
             className="max-sm:hidden"

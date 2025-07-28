@@ -4,51 +4,69 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
-      <div>
+    <footer className="pcb-hero-bg pcb-pattern border-t-2 border-[#5068a4] relative overflow-hidden" aria-labelledby="footer-heading">
+      {/* Background Circuit Elements */}
+      <div className="absolute top-10 left-20 w-32 h-1 circuit-flow opacity-15"></div>
+      <div className="absolute top-1/2 right-16 w-24 h-1 circuit-flow opacity-20" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute bottom-10 left-1/3 w-20 h-1 circuit-flow opacity-10" style={{animationDelay: '2.5s'}}></div>
+      
+      {/* Floating PCB Elements */}
+      <div className="absolute top-16 right-1/4 w-3 h-3 bg-[#5068a4] rounded-full animate-pulse opacity-30"></div>
+      <div className="absolute bottom-20 left-1/4 w-2 h-2 bg-[#5068a4] rounded-full animate-pulse opacity-40" style={{animationDelay: '1s'}}></div>
+      
+      <div className="relative z-10">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
         <div className="mx-auto max-w-screen-2xl px-6 lg:px-8 pt-24 pb-14">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <Image
-              src="/logo v1.png"
-              alt="Singitronic logo"
-              width={250}
-              height={250}
-              className="h-auto w-auto"
-            />
+            <div className="group relative">
+              <Image
+                src="/logo v1.png"
+                alt="Shree Prathmesh Engineering - Professional PCB Manufacturing"
+                width={250}
+                height={250}
+                className="h-auto w-auto transition-transform duration-300 group-hover:scale-105 filter drop-shadow-lg"
+              />
+              {/* Glowing effect around logo */}
+              <div className="absolute inset-0 -m-4 border border-[#5068a4] rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+            </div>
+            
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-lg font-bold leading-6 text-[#f5772b]">
-                    Sale
+                <div className="footer-section group">
+                  <h3 className="text-lg font-bold leading-6 text-[#5068a4] text-glow relative">
+                    PCB Prototypes
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-500"></div>
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.sale.map((item) => (
-                      <li key={item.name}>
+                    {navigation.sale.map((item, index) => (
+                      <li key={item.name} className="footer-link" style={{animationDelay: `${index * 0.1}s`}}>
                         <a
                           href={item.href}
-                          className="text-sm leading-6 text-black hover:text-gray-700"
+                          className="text-sm leading-6 text-black hover:text-[#5068a4] transition-colors duration-300 relative group inline-block"
                         >
                           {item.name}
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-300"></span>
                         </a>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-base font-bold leading-6 text-[#f5772b]">
-                    About Us
+                <div className="mt-10 md:mt-0 footer-section group">
+                  <h3 className="text-base font-bold leading-6 text-[#5068a4] text-glow relative">
+                    Prathmesh Eng.
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-500"></div>
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.about.map((item) => (
-                      <li key={item.name}>
+                    {navigation.about.map((item, index) => (
+                      <li key={item.name} className="footer-link" style={{animationDelay: `${index * 0.1}s`}}>
                         <a
                           href={item.href}
-                          className="text-sm leading-6 text-black hover:text-gray-700"
+                          className="text-sm leading-6 text-black hover:text-[#5068a4] transition-colors duration-300 relative group inline-block"
                         >
                           {item.name}
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-300"></span>
                         </a>
                       </li>
                     ))}
@@ -56,35 +74,39 @@ const Footer = () => {
                 </div>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-base font-bold leading-6 text-[#f5772b]">
-                    Buying
+                <div className="footer-section group">
+                  <h3 className="text-base font-bold leading-6 text-[#5068a4] text-glow relative">
+                    PCB Services
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-500"></div>
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.buy.map((item) => (
-                      <li key={item.name}>
+                    {navigation.buy.map((item, index) => (
+                      <li key={item.name} className="footer-link" style={{animationDelay: `${index * 0.1}s`}}>
                         <a
                           href={item.href}
-                          className="text-sm leading-6 text-black hover:text-gray-700"
+                          className="text-sm leading-6 text-black hover:text-[#5068a4] transition-colors duration-300 relative group inline-block"
                         >
                           {item.name}
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-300"></span>
                         </a>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-base font-bold leading-6 text-[#f5772b]">
-                    Support
+                <div className="mt-10 md:mt-0 footer-section group">
+                  <h3 className="text-base font-bold leading-6 text-[#5068a4] text-glow relative">
+                    Technical Support
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-500"></div>
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.help.map((item) => (
-                      <li key={item.name}>
+                    {navigation.help.map((item, index) => (
+                      <li key={item.name} className="footer-link" style={{animationDelay: `${index * 0.1}s`}}>
                         <a
                           href={item.href}
-                          className="text-sm leading-6 text-black hover:text-gray-700"
+                          className="text-sm leading-6 text-black hover:text-[#5068a4] transition-colors duration-300 relative group inline-block"
                         >
                           {item.name}
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5068a4] group-hover:w-full transition-all duration-300"></span>
                         </a>
                       </li>
                     ))}

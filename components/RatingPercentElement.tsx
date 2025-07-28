@@ -26,7 +26,7 @@ const RatingPercentElement = () => {
       <div className="flex items-center justify-center mt-4">
         <a
           href="#"
-          className="text-base font-medium text-black dark:text-[#f5772b] hover:underline"
+          className="text-base font-medium text-black dark:text-[#9cc0d0] hover:underline"
         >
           5 star
         </a>
@@ -40,7 +40,7 @@ const RatingPercentElement = () => {
       <div className="flex items-center mt-4 justify-center">
         <a
           href="#"
-          className="text-base font-medium text-black dark:text-[#f5772b] hover:underline"
+          className="text-base font-medium text-black dark:text-[#9cc0d0] hover:underline"
         >
           4 star
         </a>
@@ -54,7 +54,7 @@ const RatingPercentElement = () => {
       <div className="flex items-center mt-4 justify-center">
         <a
           href="#"
-          className="text-base font-medium text-black dark:text-[#f5772b] hover:underline"
+          className="text-base font-medium text-black dark:text-[#9cc0d0] hover:underline"
         >
           3 star
         </a>
@@ -68,7 +68,7 @@ const RatingPercentElement = () => {
       <div className="flex items-center mt-4 justify-center">
         <a
           href="#"
-          className="text-base font-medium text-black dark:text-[#f5772b] hover:underline"
+          className="text-base font-medium text-black dark:text-[#9cc0d0] hover:underline"
         >
           2 star
         </a>
@@ -82,7 +82,7 @@ const RatingPercentElement = () => {
       <div className="flex items-center mt-4 justify-center">
         <a
           href="#"
-          className="text-base font-medium text-black dark:text-[#f5772b] hover:underline"
+          className="text-base font-medium text-black dark:text-[#9cc0d0] hover:underline"
         >
           1 star
         </a>

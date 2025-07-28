@@ -12,6 +12,10 @@ const config: Config = {
         'custom-yellow':'#FED700',
         'primary-color':'#051937',
         'secondary-color': '#A8EB12',
+        'pcb-blue': '#9cc0d0',
+        'pcb-blue-dark': '#8bb2c4',
+        'pcb-blue-light': '#a5c9d6',
+        'pcb-trace': '#7ba8bb',
       }
     },
   },  

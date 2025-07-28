@@ -20,10 +20,10 @@ const SearchInput = () => {
         type="text"
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
-        placeholder="Type here"
+        placeholder="Search PCBs, components..."
         className="bg-gray-50 input input-bordered w-[70%] rounded-l-3xl outline-none focus:outline-none max-sm:w-full"
       />
-      <button type="submit" className="btn bg-[#f5772b] text-white rounded-r-3xl hover:bg-[#e6652a]">
+      <button type="submit" className="btn bg-[#5068a4] text-white rounded-r-3xl hover:bg-opacity-90">
         Search
       </button>
     </form>

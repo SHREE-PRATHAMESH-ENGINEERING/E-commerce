@@ -12,7 +12,7 @@ const ColorInput = () => {
           <FaCheck className="text-black" />
         </div>
         <div className="bg-gray-500 w-10 h-10 rounded-full cursor-pointer"></div>
-        <div className="bg-[#f5772b] w-10 h-10 rounded-full cursor-pointer"></div>
+        <div className="bg-[#9cc0d0] w-10 h-10 rounded-full cursor-pointer"></div>
       </div>
     </div>
   );

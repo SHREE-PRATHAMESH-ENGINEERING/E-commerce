@@ -6,13 +6,34 @@ import Heading from "./Heading";
 
 const CategoryMenu = () => {
   return (
-    <div className="py-10 bg-[#f5772b]">
-      <Heading title="BROWSE CATEGORIES" />
-      <div className="max-w-screen-2xl mx-auto py-10 gap-x-5 px-16 max-md:px-10 gap-y-5 grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-[450px]:grid-cols-1">
-        {categoryMenuList.map((item) => (
-          <CategoryItem title={item.title} key={item.id} href={item.href}>
-            <Image src={item.src} width={48} height={48} alt={item.title} />
-          </CategoryItem>
+    <div className="py-10 pcb-hero-bg pcb-circuit-bg relative">
+      {/* Background Circuit Elements */}
+      <div className="absolute top-10 right-20 w-32 h-1 circuit-flow opacity-30"></div>
+      <div className="absolute bottom-10 left-20 w-24 h-1 circuit-flow opacity-40" style={{animationDelay: '2s'}}></div>
+      
+      <div className="text-animate">
+        <Heading title="PCB CATEGORIES" />
+      </div>
+      <div className="max-w-screen-2xl mx-auto py-16 gap-6 px-16 max-md:px-10 grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-[450px]:grid-cols-1 relative z-10">
+        {categoryMenuList.map((item, index) => (
+          <div 
+            key={item.id}
+            className="animate-scale h-full"
+            style={{
+              animationDelay: `${index * 0.15}s`,
+              animationFillMode: 'both'
+            }}
+          >
+            <CategoryItem title={item.title} href={item.href}>
+              <Image 
+                src={item.src} 
+                width={48} 
+                height={48} 
+                alt={item.title}
+                className="w-12 h-12 object-contain filter drop-shadow-md"
+              />
+            </CategoryItem>
+          </div>
         ))}
       </div>
     </div>

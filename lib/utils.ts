@@ -1,61 +1,73 @@
 export const categoryMenuList = [
   {
+    id: 1,
+    title: "Single Layer PCBs",
+    src: "/laptop icon.png",
+    href: "/shop/single-layer-pcbs"
+  },
+  {
+    id: 2,
+    title: "Multi Layer PCBs",
+    src: "/pc 1.png",
+    href: "/shop/multi-layer-pcbs"
+  },
+  {
     id: 3,
-    title: "Mouses",
+    title: "Flex PCBs",
     src: "/mouse icon.png",
-    href: "/shop/mouses"
+    href: "/shop/flex-pcbs"
   },
   {
     id: 4,
-    title: "Cameras",
+    title: "Rigid-Flex PCBs",
     src: "/camera icon.png",
-    href: "/shop/cameras"
+    href: "/shop/rigid-flex-pcbs"
   },
   {
     id: 5,
-    title: "Smart Watches",
-    src: "/smart watch.png",
-    href: "/shop/watches"
+    title: "Prototype PCBs",
+    src: "/headphone icon.png",
+    href: "/shop/prototype-pcbs"
   },
 ];
 
 export const incentives = [
   {
-    name: "Free Shipping",
+    name: "Fast PCB Manufacturing",
     description:
-      "Our shipping is completely free and that is completely good for our customers.",
-    imageSrc: "/shipping icon.png",
+      "Quick turnaround times for prototype and production PCBs with industry-leading quality standards.",
+    imageSrc: "/fast shopping icon.png",
   },
   {
-    name: "24/7 Customer Support",
+    name: "Quality Assurance",
     description:
-      "Our support is working all day and night to answer any question you have.",
+      "100% electrical testing and visual inspection ensures your PCBs meet specification requirements.",
     imageSrc: "/support icon.png",
   },
   {
-    name: "Fast Shopping Cart",
+    name: "Professional Support",
     description:
-      "We have super fast shopping experience and you will enjoy it.",
-    imageSrc: "/fast shopping icon.png",
+      "Expert technical support team available to help with design optimization and manufacturing queries.",
+    imageSrc: "/shipping icon.png",
   },
 ];
 
 export const navigation = {
   sale: [
-    { name: "Discounts", href: "#" },
-    { name: "News", href: "#" },
+    { name: "PCB Prototypes", href: "#" },
+    { name: "Volume Discounts", href: "#" },
   ],
   about: [
-    { name: "About", href: "#" },
-    { name: "Work With Us", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "Quality Standards", href: "#" },
   ],
   buy: [
-    { name: "Terms Of Use", href: "#" },
-    { name: "Complaints", href: "#" },
+    { name: "PCB Design Guidelines", href: "#" },
+    { name: "Shipping Info", href: "#" },
   ],
   help: [
-    { name: "Contact", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Technical Support", href: "#" },
+    { name: "PCB FAQ", href: "#" },
   ],
 };
 
