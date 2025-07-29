@@ -1,5 +1,4 @@
 import { incentives } from '@/lib/utils'
-import Image from 'next/image'
 import React from 'react'
 
 const Incentives = () => {
@@ -12,7 +11,7 @@ const Incentives = () => {
           <div key={incentive.name} className="text-center sm:flex sm:text-left lg:block lg:text-center">
             <div className="sm:flex-shrink-0">
               <div className="flow-root">
-                <Image width={48} height={48} className="mx-auto" src={incentive.imageSrc} alt={incentive.name} />
+                <div className="mx-auto text-4xl w-12 h-12 flex items-center justify-center">{incentive.icon}</div>
               </div>
             </div>
             <div className="mt-3 sm:ml-3 sm:mt-0 lg:ml-0 lg:mt-3">

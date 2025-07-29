@@ -1,6 +1,5 @@
 import React from "react";
 import CategoryItem from "./CategoryItem";
-import Image from "next/image";
 import { categoryMenuList } from "@/lib/utils";
 import Heading from "./Heading";
 
@@ -22,13 +21,9 @@ const CategoryMenu = () => {
             }}
           >
             <CategoryItem title={item.title} href={item.href}>
-              <Image 
-                src={item.src} 
-                width={48} 
-                height={48} 
-                alt={item.title}
-                className="w-12 h-12 object-contain filter drop-shadow-md"
-              />
+              <div className="text-3xl filter drop-shadow-md">
+                {item.icon}
+              </div>
             </CategoryItem>
           </div>
         ))}

@@ -2,31 +2,31 @@ export const categoryMenuList = [
   {
     id: 1,
     title: "Single Layer PCBs",
-    src: "/laptop icon.png",
+    icon: "🔧",
     href: "/shop/single-layer-pcbs"
   },
   {
     id: 2,
     title: "Multi Layer PCBs",
-    src: "/pc 1.png",
+    icon: "⚙️",
     href: "/shop/multi-layer-pcbs"
   },
   {
     id: 3,
     title: "Flex PCBs",
-    src: "/mouse icon.png",
+    icon: "🔌",
     href: "/shop/flex-pcbs"
   },
   {
     id: 4,
     title: "Rigid-Flex PCBs",
-    src: "/camera icon.png",
+    icon: "🛠️",
     href: "/shop/rigid-flex-pcbs"
   },
   {
     id: 5,
     title: "Prototype PCBs",
-    src: "/headphone icon.png",
+    icon: "⚡",
     href: "/shop/prototype-pcbs"
   },
 ];
@@ -36,19 +36,19 @@ export const incentives = [
     name: "Fast PCB Manufacturing",
     description:
       "Quick turnaround times for prototype and production PCBs with industry-leading quality standards.",
-    imageSrc: "/fast shopping icon.png",
+    icon: "⚡",
   },
   {
     name: "Quality Assurance",
     description:
       "100% electrical testing and visual inspection ensures your PCBs meet specification requirements.",
-    imageSrc: "/support icon.png",
+    icon: "✅",
   },
   {
     name: "Professional Support",
     description:
       "Expert technical support team available to help with design optimization and manufacturing queries.",
-    imageSrc: "/shipping icon.png",
+    icon: "🔧",
   },
 ];
 

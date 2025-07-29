@@ -43,7 +43,7 @@ const Hero = () => {
         
         <div className="relative animate-in-right">
           <Image
-            src="/img/hero.png"
+            src="/img/hero.jpg"
             width={400}
             height={400}
             alt="Professional PCB circuit board for electronics projects"
