@@ -6,10 +6,7 @@ import Heading from "./Heading";
 
 const CategoryMenu = () => {
   return (
-    <div className="py-10 pcb-hero-bg pcb-circuit-bg relative">
-      {/* Background Circuit Elements */}
-      <div className="absolute top-10 right-20 w-32 h-1 circuit-flow opacity-30"></div>
-      <div className="absolute bottom-10 left-20 w-24 h-1 circuit-flow opacity-40" style={{animationDelay: '2s'}}></div>
+    <div className="py-10 bg-[#FAF9EE] relative">
       
       <div className="text-animate">
         <Heading title="PCB CATEGORIES" />

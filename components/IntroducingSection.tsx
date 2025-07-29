@@ -3,13 +3,7 @@ import React from "react";
 
 const IntroducingSection = () => {
   return (
-    <div className="py-20 pt-24 pcb-hero-bg pcb-pattern relative overflow-hidden">
-      {/* Background Circuit Elements */}
-      <div className="absolute top-20 left-10 w-40 h-1 circuit-flow opacity-20"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-1 circuit-flow opacity-30" style={{animationDelay: '1.5s'}}></div>
-      <div className="absolute top-1/3 right-20 w-6 h-6 bg-[#5068a4] rounded-full opacity-20 float-element"></div>
-      <div className="absolute bottom-1/3 left-20 w-8 h-8 border border-[#3d5998] rounded-full opacity-15 float-delay-1"></div>
-      <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-[#00a86b] rounded-full opacity-25 float-delay-2"></div>
+    <div className="py-20 pt-24 bg-[#FAF9EE] relative overflow-hidden">
       
       <div className="text-center flex flex-col gap-y-8 items-center max-w-6xl mx-auto px-6 relative z-10">
         {/* Main Heading with Animation */}

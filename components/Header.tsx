@@ -62,10 +62,7 @@ const Header = () => {
   }, [session?.user?.email, wishlist.length]);
 
   return (
-    <header className="pcb-hero-bg pcb-pattern border-b-2 border-[#5068a4] relative">
-      {/* Background Circuit Elements */}
-      <div className="absolute top-1/2 left-10 w-20 h-1 circuit-flow opacity-20"></div>
-      <div className="absolute top-1/2 right-10 w-16 h-1 circuit-flow opacity-25" style={{animationDelay: '1s'}}></div>
+    <header className="bg-white border-b-2 border-[#5068a4] relative">
       
       <HeaderTop />
       {pathname.startsWith("/admin") === false && (
@@ -76,7 +73,7 @@ const Header = () => {
               width={200} 
               height={200} 
               alt="Shree Prathmesh Engineering - PCB Manufacturing" 
-              className="relative right-5 max-[1023px]:w-56 max-md:w-48 max-sm:w-40 max-sm:right-2 transition-all duration-300 group-hover:scale-105 filter drop-shadow-lg group-hover:drop-shadow-xl" 
+              className="relative right-5 max-[1023px]:w-56 max-md:w-48 max-sm:w-40 max-sm:right-2 " 
             />
             {/* Glowing effect around logo */}
             <div className="absolute inset-0 -m-2 border border-[#5068a4] rounded-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>

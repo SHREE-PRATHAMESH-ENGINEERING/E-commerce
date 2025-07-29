@@ -12,7 +12,7 @@ const ProductItem = ({
 }) => {
   return (
     <Link href={`/product/${product.slug}`} className="block group">
-      <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-1 animate-scale cursor-pointer">
+      <div className="relative bg-[#FAF9EE] rounded-2xl shadow-lg border border-gray-100 overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-1 animate-scale cursor-pointer">
         {/* PCB Circuit Border Effect */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#5068a4] to-[#3d5998]"></div>
         

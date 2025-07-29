@@ -4,15 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="pcb-hero-bg pcb-pattern border-t-2 border-[#5068a4] relative overflow-hidden" aria-labelledby="footer-heading">
-      {/* Background Circuit Elements */}
-      <div className="absolute top-10 left-20 w-32 h-1 circuit-flow opacity-15"></div>
-      <div className="absolute top-1/2 right-16 w-24 h-1 circuit-flow opacity-20" style={{animationDelay: '1.5s'}}></div>
-      <div className="absolute bottom-10 left-1/3 w-20 h-1 circuit-flow opacity-10" style={{animationDelay: '2.5s'}}></div>
-      
-      {/* Floating PCB Elements */}
-      <div className="absolute top-16 right-1/4 w-3 h-3 bg-[#5068a4] rounded-full animate-pulse opacity-30"></div>
-      <div className="absolute bottom-20 left-1/4 w-2 h-2 bg-[#5068a4] rounded-full animate-pulse opacity-40" style={{animationDelay: '1s'}}></div>
+    <footer className="bg-white border-t-2 border-[#5068a4] relative overflow-hidden" aria-labelledby="footer-heading">
       
       <div className="relative z-10">
         <h2 id="footer-heading" className="sr-only">
@@ -26,7 +18,7 @@ const Footer = () => {
                 alt="Shree Prathmesh Engineering - Professional PCB Manufacturing"
                 width={250}
                 height={250}
-                className="h-auto w-auto transition-transform duration-300 group-hover:scale-105 filter drop-shadow-lg"
+                className="h-auto w-auto"
               />
               {/* Glowing effect around logo */}
               <div className="absolute inset-0 -m-4 border border-[#5068a4] rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>

@@ -24,10 +24,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="pcb-hero-bg pcb-pattern min-h-screen relative overflow-hidden">
-      {/* Background Circuit Elements */}
-      <div className="absolute top-20 right-20 w-32 h-1 circuit-flow opacity-15"></div>
-      <div className="absolute bottom-20 left-20 w-24 h-1 circuit-flow opacity-20" style={{animationDelay: '1.5s'}}></div>
+    <div className="bg-[#FAF9EE] min-h-screen relative overflow-hidden">
       <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#5068a4] rounded-full opacity-20 float-element"></div>
       
       <SectionTitle title="Cart Page" path="Home | Cart" />
